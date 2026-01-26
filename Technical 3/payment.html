@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopmaiah - Payment & Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shopmaiah</h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="catalog.html">Product Catalog</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h2>Payment & Delivery</h2>
+            <form id="paymentForm" action="confirmation.html" method="get">
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">Select</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                
+                <label for="deliveryOption">Delivery Option:</label>
+                <select id="deliveryOption" name="deliveryOption" required>
+                    <option value="">Select</option>
+                    <option value="standard">Standard (₱50, 5-7 days)</option>
+                    <option value="express">Express (₱100, 2-3 days)</option>
+                </select>
+                
+                <button type="submit">Confirm Order</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Shopmaiah. All rights reserved.</p>
+        <p>Contact: info@shopmaiah.com | Phone: 09273880721</p>
+    </footer>
+</body>
+</html>
